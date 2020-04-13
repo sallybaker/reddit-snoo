@@ -1,0 +1,138 @@
+.frame {
+  position: relative;
+  margin: auto auto; 
+  height: 400px;
+  width:400px;
+}
+.arm {
+  position: absolute; 
+  height: 100px; 
+  width: 40px;
+  background: transparent; 
+  border: 8px solid black;
+  border-radius: 100%;
+  top: 190px;
+}
+.arm-left {
+  left: 110px;
+}
+.arm-right {
+  left: 230px;
+}
+.foot {
+  position: absolute;
+  height: 30px;
+  width: 50px;
+  border: 8px solid black;
+  border-radius: 100% 30% 30%;
+  top: 360px;
+}
+@keyframes tapping {
+  0% { 
+    transform: rotate(0deg);
+    transform-origin: bottom right;
+  }
+  50% { 
+    transform: rotate(15deg); 
+    transform-origin: bottom right;
+  }
+  100% { 
+    transform: rotate(0deg);
+    transform-origin: bottom right;
+  }
+}
+.foot-left {
+  left: 120px;  
+  animation-name: tapping;
+  animation-duration: 0.5s;
+  animation-iteration-count: 3;
+}
+.foot-right {
+  left: 210px;
+  transform: scaleX(-1);
+}
+.body {
+  position: absolute;
+  height: 270px; 
+  width: 120px; 
+  border-radius: 100%;
+  border: 8px solid black; 
+  background: white;
+  top: 120px;
+  left: 130px;
+}
+.antenna::before {
+  position: absolute;
+  content: "";
+  height:30px;
+  width:30px;
+  border: 8px solid black;
+  border-radius: 100%;
+  background:white;
+  left: 50px;
+  top:-25px;
+}
+.antenna {
+  position: absolute;
+  height: 80px;
+  width: 80px;
+  background: transparent;
+  border: 8px solid black;
+  border-color: black transparent transparent black;
+  transform:rotate(10deg);
+  top: 20px;
+  left: 220px;
+}
+.head {
+  position: absolute;
+  height: 120px;
+  width: 200px;
+  border-radius: 100%;
+  background:white;
+  border: 8px solid black;
+  top: 70px;
+  left: 90px;
+}
+.ear {
+  height:45px;
+  width:45px;
+  border: 8px solid black;
+  border-radius: 100%;
+  background:white;
+}
+.ear-left {
+  position: absolute;
+  top: 70px;
+  left: 80px;
+}
+.ear-right {
+  position: absolute;
+  top: 70px;
+  left: 255px;
+}
+.eye {
+  position: absolute;
+  height: 40px;
+  width: 40px;
+  background:#FF5700;
+  border-radius: 100%;
+}
+.eye-left {
+  left: 40px;
+  top: 30px;
+}
+.eye-right {
+  left: 120px;
+  top: 30px;
+}
+.smile {
+  position: absolute;
+  height: 60px; 
+  width: 80px;
+  background: transparent;
+  border: 8px solid black; 
+  border-radius: 100%;
+  border-color: transparent transparent black transparent;
+  left: 50px;
+  top: 25px;
+}
